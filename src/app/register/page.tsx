@@ -11,8 +11,12 @@ import Button from "@/components/ui/Button";
 const Page: React.FC = ({}) => {
   const [showPassword, setShowPassword] = React.useState<boolean>(false);
   return (
-    <div className={cn("flex min-w-full")}>
-      <div className={cn("bg-accent md:w-[55%] h-screen relative")}>
+    <div className={cn("flex min-w-full h-screen")}>
+      <div
+        className={cn(
+          "bg-accent md:w-[55%] h-screen relative hidden md:inline-block"
+        )}
+      >
         <Image
           src={"/assets/avira.svg"}
           width={96}
@@ -25,10 +29,14 @@ const Page: React.FC = ({}) => {
           width={100}
           height={100}
           alt="illustrasione"
-          className={cn("absolute bottom-0 -right-20 w-full")}
+          className={cn("md:absolute bottom-0 -right-20 md:w-full")}
         />
       </div>
-      <div className={cn("inline-flex flex-col justify-center mx-auto")}>
+      <div
+        className={cn(
+          "inline-flex flex-col justify-center mx-auto w-full md:w-[330px] px-6 md:px-0 gap-2 md:gap-0 "
+        )}
+      >
         <Text type="h1" variant="heading1" value="Create an Account" />
         <Text
           type="h2"
