@@ -7,6 +7,7 @@ import Image from "next/image";
 import * as React from "react";
 import CustomSwitch from "@/components/ui/Switch";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 const Page: React.FC = ({}) => {
   const [showPassword, setShowPassword] = React.useState<boolean>(false);
@@ -34,7 +35,7 @@ const Page: React.FC = ({}) => {
       </div>
       <div
         className={cn(
-          "inline-flex flex-col justify-center mx-auto w-full md:w-[330px] px-6 md:px-0 gap-6 md:gap-6 "
+          "inline-flex flex-col justify-center mx-auto w-full md:w-[350px] px-6 md:px-0 gap-6 md:gap-6 "
         )}
       >
         <Text type="h1" variant="heading1" value="Nice to see you again!" />
@@ -71,13 +72,15 @@ const Page: React.FC = ({}) => {
             className={cn("text-tertiary pr-2")}
             type="span"
           />
-          <Text
-            value="Get Started"
-            variant="captionC1Semi"
-            className={cn("cursor-pointer")}
-            colors="accent"
-            type="span"
-          />
+          <Link
+            href="/register"
+            className={cn(
+              "cursor-pointer",
+              textVariants({ variant: "captionC1Semi", colors: "accent" })
+            )}
+          >
+            Get Started
+          </Link>
         </div>
       </div>
     </div>
