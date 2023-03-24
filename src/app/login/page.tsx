@@ -37,14 +37,7 @@ const Page: React.FC = ({}) => {
           "inline-flex flex-col justify-center mx-auto w-full md:w-[330px] px-6 md:px-0 gap-6 md:gap-6 "
         )}
       >
-        <div>
-          <Text type="h1" variant="heading1" value="Create an Account" />
-          <Text
-            type="h2"
-            variant="bodyB2"
-            value="Hello there, Let’s start your journey with us."
-          />
-        </div>
+        <Text type="h1" variant="heading1" value="Nice to see you again!" />
         <Input className={cn("")} placeholder="Email or phone number" />
         <Input
           className={cn("")}
@@ -60,13 +53,12 @@ const Page: React.FC = ({}) => {
             className={cn("cursor-pointer")}
           />
         </Input>
-        <div className={cn("flex items-center gap-3")}>
-          <CustomSwitch enabled={true} />
-          <p className={cn(textVariants({ variant: "captionC1" }))}>
-            I accept the{" "}
-            <span className={cn("text-accent")}>Terms of Service</span> and{" "}
-            <span className={cn("text-accent")}>Privacy Policy.</span>
-          </p>
+        <div className={cn("flex items-center justify-between")}>
+          <div className={cn("inline-flex gap-2")}>
+            <CustomSwitch enabled={true} />
+            <Text type="span" variant="captionC1" value="Remember me" />
+          </div>
+          <Text type="span" variant="captionC1" value="Forgot password?" />
         </div>
         <Button>
           <Text type="span" variant="bodyB1" colors="light" value="Sign up" />
@@ -74,13 +66,13 @@ const Page: React.FC = ({}) => {
         <div className="border"></div>
         <div className="flex items-center justify-center">
           <Text
-            value="Already have an account? "
+            value="Don’t have an account?"
             variant="captionC1"
             className={cn("text-tertiary pr-2")}
             type="span"
           />
           <Text
-            value="Login now"
+            value="Get Started"
             variant="captionC1Semi"
             className={cn("cursor-pointer")}
             colors="accent"
