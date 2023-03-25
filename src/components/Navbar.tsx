@@ -35,28 +35,28 @@ const Navbar: FC<NavbarProps> = ({}) => {
   return (
     <>
       {path !== "/login" && path !== "/register" && (
-        <nav
-          className={cn(
-            "w-screen px-14 h-[100px] flex items-center justify-between"
-          )}
-        >
-          <Link href="/">
-            <Image
-              src={"/assets/aviranav.svg"}
-              width={80}
-              height={68}
-              alt="avira"
-              priority
-            />
-          </Link>
-          <div className={cn("flex gap-10")}>
+        <nav className={cn("w-full px-14 h-[100px] flex items-center ")}>
+          <div className={cn("w-full")}>
+            <Link href="/">
+              <Image
+                src={"/assets/aviranav.svg"}
+                width={80}
+                height={68}
+                alt="avira"
+                priority
+              />
+            </Link>
+          </div>
+          <div className={cn("flex justify-center gap-10 w-full")}>
             <Item href="/" text="Home" />
             <Item href="/shop" text="Shop" />
             <Item href="/blogs" text="Blogs" />
             <Item href="/about" text="About" />
             <Item href="/contact" text="Contact" />
           </div>
-          <div className={cn("inline-flex items-center gap-10")}>
+          <div
+            className={cn("inline-flex justify-end items-center gap-10 w-full")}
+          >
             <div className={cn("inline-flex items-center gap-2")}>
               <Image
                 src={"/assets/user.svg"}
