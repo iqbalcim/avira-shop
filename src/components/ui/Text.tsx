@@ -18,7 +18,7 @@ export const textVariants = cva("text-primary", {
     colors: {
       default: "text-primary",
       accent: "text-accent",
-      light: "text-light",
+      light: "text-white",
     },
   },
   defaultVariants: {

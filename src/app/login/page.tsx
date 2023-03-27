@@ -62,7 +62,7 @@ const Page: React.FC = ({}) => {
           <Text type="span" variant="captionC1" value="Forgot password?" />
         </div>
         <Button>
-          <Text type="span" variant="bodyB1" colors="light" value="Sign up" />
+          <Text type="span" variant="bodyB1" colors="light" value="Sign in" />
         </Button>
         <div className="border"></div>
         <div className="flex items-center justify-center">
