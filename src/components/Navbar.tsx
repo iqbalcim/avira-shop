@@ -35,8 +35,12 @@ const Navbar: FC<NavbarProps> = ({}) => {
   return (
     <>
       {path !== "/login" && path !== "/register" && (
-        <nav className={cn("w-full px-14 h-[100px] flex items-center ")}>
-          <div className={cn("w-full")}>
+        <nav
+          className={cn(
+            "w-full px-16 h-[10vh] flex items-center shadow-md bg-white z-10"
+          )}
+        >
+          <div className={cn("inline-flex w-full")}>
             <Link href="/">
               <Image
                 src={"/assets/aviranav.svg"}
@@ -47,10 +51,9 @@ const Navbar: FC<NavbarProps> = ({}) => {
               />
             </Link>
           </div>
-          <div className={cn("flex justify-center gap-10 w-full")}>
+          <div className={cn("inline-flex justify-center gap-10 w-full")}>
             <Item href="/" text="Home" />
             <Item href="/shop" text="Shop" />
-            <Item href="/blogs" text="Blogs" />
             <Item href="/about" text="About" />
             <Item href="/contact" text="Contact" />
           </div>
