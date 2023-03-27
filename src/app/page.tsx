@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className={cn("p-16")}>
+    <div className={cn("px-16 pt-16 pb-6")}>
       <div className={cn("flex gap-8")}>
         <div className={cn("relative w-[40%]")}>
           <Image
@@ -35,7 +35,9 @@ export default function Home() {
           </div>
         </div>
         <div className={cn("flex flex-col gap-8 w-[60%]")}>
-          <div className={cn("relative w-full shadow-md")}>
+          <div
+            className={cn("relative w-full border border-slate-100 shadow-md")}
+          >
             <Image
               src="/assets/footwear.svg"
               alt="footwear"
