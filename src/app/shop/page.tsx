@@ -49,14 +49,17 @@ export default function Home() {
             height={100}
             className={cn("object-cover w-full h-full")}
           />
-          <div className={cn("absolute bottom-0 left-0 p-7")}>
+          <Link
+            href="/category/men"
+            className={cn("absolute bottom-0 left-0 p-7")}
+          >
             <Text
               type="h1"
               value="MEN"
               variant="bodyB1Semi"
               className={cn("bg-white px-16 py-4")}
             />
-          </div>
+          </Link>
         </div>
 
         <div className={cn("relative w-[25%]")}>
@@ -67,14 +70,17 @@ export default function Home() {
             height={600}
             className={cn("object-cover w-full h-full")}
           />
-          <div className={cn("absolute bottom-0 left-0 p-7")}>
+          <Link
+            href="/category/women"
+            className={cn("absolute bottom-0 left-0 p-7")}
+          >
             <Text
               type="h1"
               value="WOMEN"
               variant="bodyB1Semi"
               className={cn("bg-white px-16 py-4")}
             />
-          </div>
+          </Link>
         </div>
 
         <div className={cn("w-[23%] flex flex-col gap-8")}>
@@ -85,14 +91,17 @@ export default function Home() {
               width={1200}
               height={600}
             />
-            <div className={cn("absolute bottom-0 left-0 p-7")}>
+            <Link
+              href="/category/accessories"
+              className={cn("absolute bottom-0 left-0 p-7")}
+            >
               <Text
                 type="h1"
                 value="ACCESSORIES"
                 variant="bodyB1Semi"
                 className={cn("bg-white px-16 py-4")}
               />
-            </div>
+            </Link>
           </div>
 
           <div className={cn("relative")}>
@@ -102,14 +111,17 @@ export default function Home() {
               width={1200}
               height={600}
             />
-            <div className={cn("absolute top-0 left-0 p-7")}>
+            <Link
+              href="/category/footwear"
+              className={cn("absolute top-0 left-0 p-7")}
+            >
               <Text
                 type="h1"
                 value="FOOTWEAR"
                 variant="bodyB1Semi"
                 className={cn("bg-white px-16 py-4")}
               />
-            </div>
+            </Link>
           </div>
         </div>
         <div className={cn("w-[23%] flex flex-col gap-8")}>
@@ -120,14 +132,17 @@ export default function Home() {
               width={1200}
               height={600}
             />
-            <div className={cn("absolute bottom-0 left-0 p-7")}>
+            <Link
+              href="/category/kids"
+              className={cn("absolute bottom-0 left-0 p-7")}
+            >
               <Text
                 type="h1"
                 value="KIDS"
                 variant="bodyB1Semi"
                 className={cn("bg-white px-16 py-4")}
               />
-            </div>
+            </Link>
           </div>
           <div className={cn("relative")}>
             <Image
@@ -136,14 +151,17 @@ export default function Home() {
               width={1200}
               height={600}
             />
-            <div className={cn("absolute top-0 left-0 p-7")}>
+            <Link
+              href="/category/beauty"
+              className={cn("absolute top-0 left-0 p-7")}
+            >
               <Text
                 type="h1"
                 value="BEAUTY"
                 variant="bodyB1Semi"
                 className={cn("bg-white px-16 py-4")}
               />
-            </div>
+            </Link>
           </div>
         </div>
       </div>
