@@ -27,30 +27,6 @@ export const textVariants = cva("text-primary", {
   },
 });
 
-// interface HeadingProps
-//   extends HTMLAttributes<HTMLElement>,
-//     VariantProps<typeof textVariants> {
-//   value: string;
-//   className?: string;
-// }
-
-// const Text: FC<HeadingProps> = (
-//   { variant, colors, value, className, ...props },
-//   element: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" = "h1"
-// ): ReactElement => {
-//   return createElement(
-//     element,
-//     { ...props, className: cn(textVariants({ colors, className, variant })) },
-//     value
-//   );
-
-//   // <h1 {...props} className={cn(textVariants({ colors, className, variant }))}>
-//   //   {children}
-//   // </h1>
-// };
-
-// export default Text;
-
 interface HeadProps
   extends HTMLAttributes<HTMLElement>,
     VariantProps<typeof textVariants> {
